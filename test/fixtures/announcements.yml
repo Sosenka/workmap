@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyString
+  addedDate: 2016-11-09 14:31:08
+  idUsers: 1
+  idCategory: 1
+  idSubcategory: MyString
+
+two:
+  title: MyString
+  description: MyString
+  addedDate: 2016-11-09 14:31:08
+  idUsers: 1
+  idCategory: 1
+  idSubcategory: MyString

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  permission1: false
+  permission2: false
+  permission3: false
+
+two:
+  type: 
+  permission1: false
+  permission2: false
+  permission3: false
