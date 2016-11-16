@@ -22,15 +22,16 @@
                 <% if !user_signed_in? %>
                   <a class="dropdown-button" data-activates="menu_escrow_accounts" data-beloworigin="true" href="javascript:;">Opcje Logowania<i class="material-icons right">arrow_drop_down</i></a>
                   <ul id="menu_escrow_accounts" class="dropdown-content" style="width: 191px; position: absolute; top: 64px; left: 619.875px; opacity: 1; display: none;">
-                      <li><a href="#">Logowanie</a></li>
-                      <li><a href="#">rejestracja</a></li>
+                      <li><a href="/logowanie">Logowanie</a></li>
+                      <li><a href="/rejestracja">rejestracja</a></li>
                   </ul>
               </li>
               <% else %>
-              <a class="dropdown-button" data-activates="menu_escrow_accounts" data-beloworigin="true" href="javascript:;">Jesteś zalogowany jako: <%= current_user.email %><i class="material-icons right">arrow_drop_down</i></a>
+              <a class="dropdown-button" data-activates="menu_escrow_accounts" data-beloworigin="true" href="javascript:;"><%= current_user.email %><i class="material-icons right">arrow_drop_down</i></a>
               <ul id="menu_escrow_accounts" class="dropdown-content" style="width: 191px; position: absolute; top: 64px; left: 619.875px; opacity: 1; display: none;">
-                  <li><a href="#">Profil</a></li>
+                  <li><%= link_to "Profil", edit_user_registration_path %></li>
                   <li><a href="#">Twoje Ogłoszenia</a></li>
+                  <li><%= link_to('Wyloguj', destroy_user_session_path, :method => :delete) %></li>
               </ul>
           </li>
               <% end %>
